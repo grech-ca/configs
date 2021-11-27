@@ -16,6 +16,7 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
 set backspace=indent,eol,start
+set scrolloff=5
 set mouse=nicr
 "set cursorline
 set shell=sh
