@@ -1,3 +1,25 @@
+"
+"
+"
+"
+"                                       _
+"                                      | |
+"                    __ _ _ __ ___  ___| |__
+"                   / _` | '__/ _ \/ __| '_ \
+"                  | (_| | | |  __/ (__| | | |
+"                   \__, |_|  \___|\___|_| |_|
+"                    __/ |
+"                   |___/
+"
+"
+"                  Configurations repository of
+"
+"              Mikhail Grechka <grech.code@gmail.com>
+"
+"
+"
+"
+
 "-------------------- General Settings --------------------
 
 set expandtab
