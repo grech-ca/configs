@@ -1,0 +1,62 @@
+global !p
+import os
+import string
+import re
+from UltiSnips import vim_helper
+def component():
+	result = snip.basename
+	isIndex = result == 'index'
+	if isIndex:
+		filePath = vim_helper.eval('expand("%:F")')
+		result = filePath.split('/')[-2]
+	
+	allowedChars = '([^[A-Z\-_\.]])|(?<=[_\.\-])([_\.\-])*'
+	filteredString = re.sub(allowedChars, '', result)
+
+	separator = '\-|_\.|(?=[A-Z])'
+	result = ''.join(map(lambda word: string.capwords(word), re.split(separator, filteredString)))
+
+	return result
+def props():
+	return component() + 'Props'
+endglobal
+
+snippet fc "Function Component" b
+export const `!p snip.rv = component()`: FC = () => {
+	return (
+		$1
+	);
+};
+
+endsnippet
+
+snippet fcpl "Plain Function Component" b
+export const `!p snip.rv = component()`: FC = () => (
+	$1
+);
+
+endsnippet
+
+snippet fcp "Function Component With Props" b
+export interface `!p snip.rv = props()` {
+	$1
+}
+
+export const `!p snip.rv = component()`: FC<`!p snip.rv = props()`> = ({ $2 }) => (
+	return (
+		$3
+	);
+);
+
+endsnippet
+
+snippet fcpp "Plain Function Component With Props" b
+export interface `!p snip.rv = props()` {
+	$1
+}
+
+export const `!p snip.rv = component()`: FC<`!p snip.rv = props()`> = ({ $2 }) => (
+	$3
+);
+
+endsnippet

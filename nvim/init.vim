@@ -122,6 +122,7 @@ source ~/.config/nvim/plugins/surround.vim
 source ~/.config/nvim/plugins/targets.vim
 source ~/.config/nvim/plugins/visual-multi.vim
 source ~/.config/nvim/plugins/ctrlsf.vim
+source ~/.config/nvim/plugins/ultisnips.vim
 
 call plug#end()
 
