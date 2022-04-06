@@ -53,6 +53,7 @@ set undofile
 set wildmode
 set ruler
 set nohlsearch
+set modifiable
 
 "-------------------------------------------------
 

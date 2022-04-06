@@ -2,12 +2,11 @@ global !p
 import os
 import string
 import re
-from UltiSnips import vim_helper
 def component():
 	result = snip.basename
 	isIndex = result == 'index'
 	if isIndex:
-		filePath = vim_helper.eval('expand("%:F")')
+		filePath = os.path.realpath(__file__)
 		result = filePath.split('/')[-2]
 	
 	allowedChars = '([^[A-Z\-_\.]])|(?<=[_\.\-])([_\.\-])*'
@@ -58,5 +57,18 @@ export interface `!p snip.rv = props()` {
 export const `!p snip.rv = component()`: FC<`!p snip.rv = props()`> = ({ $2 }) => (
 	$3
 );
+
+endsnippet
+
+snippet np "Next Page" b
+import { NextPage } from 'next';
+
+const `!p snip.rv = component()`Page: NextPage = () => {
+	return (
+		$1
+	);
+};
+
+export default `!p snip.rv = component()`Page;
 
 endsnippet
