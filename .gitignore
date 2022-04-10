@@ -1,2 +1,5 @@
 # Symlinks
 nvim/nvim
+
+# Mac OS stuff
+.DS_Store

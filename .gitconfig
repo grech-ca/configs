@@ -1,0 +1,12 @@
+[user]
+	name = Mikhail Grechka
+	email = grech.code@gmail.com
+[core]
+	editor = vim
+[init]
+	defaultBranch = master
+[alias]
+	lg = log --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	log = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[pretty]
+	grech = %C(bold yellow)%h%C(reset) - %<(20)%an %<(12)%C(green)%ar%C(reset) %<(10): %C(cyan)%s
