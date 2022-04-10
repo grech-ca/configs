@@ -153,6 +153,7 @@ source ~/.config/nvim/plugins/targets.vim
 source ~/.config/nvim/plugins/visual-multi.vim
 source ~/.config/nvim/plugins/ctrlsf.vim
 source ~/.config/nvim/plugins/ultisnips.vim
+source ~/.config/nvim/plugins/blamer.vim
 
 call plug#end()
 
