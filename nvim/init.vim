@@ -151,7 +151,6 @@ source ~/.config/nvim/plugins/splitjoin.vim
 source ~/.config/nvim/plugins/surround.vim
 source ~/.config/nvim/plugins/targets.vim
 source ~/.config/nvim/plugins/visual-multi.vim
-source ~/.config/nvim/plugins/ctrlsf.vim
 source ~/.config/nvim/plugins/blamer.vim
 source ~/.config/nvim/plugins/css-color.vim
 source ~/.config/nvim/plugins/wakatime.vim
