@@ -135,7 +135,7 @@ source ~/.config/nvim/plugins/airline.vim
 source ~/.config/nvim/plugins/context-commentstring.vim
 source ~/.config/nvim/plugins/coc.vim
 source ~/.config/nvim/plugins/fzf.vim
-source ~/.config/nvim/plugins/nerdtree.vim
+source ~/.config/nvim/plugins/chadtree.vim
 source ~/.config/nvim/plugins/lion.vim
 source ~/.config/nvim/plugins/eunuch.vim
 source ~/.config/nvim/plugins/firenvim.vim
@@ -154,6 +154,7 @@ source ~/.config/nvim/plugins/visual-multi.vim
 source ~/.config/nvim/plugins/ctrlsf.vim
 source ~/.config/nvim/plugins/blamer.vim
 source ~/.config/nvim/plugins/css-color.vim
+source ~/.config/nvim/plugins/wakatime.vim
 
 call plug#end()
 
