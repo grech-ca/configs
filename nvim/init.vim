@@ -29,7 +29,6 @@ set hidden
 set icon
 set list
 set listchars=tab:>\ ,trail:•
-set mouse=nv
 set relativenumber
 set scrolloff=8
 set sidescrolloff=8
@@ -138,11 +137,8 @@ source ~/.config/nvim/plugins/fzf.vim
 source ~/.config/nvim/plugins/chadtree.vim
 source ~/.config/nvim/plugins/lion.vim
 source ~/.config/nvim/plugins/eunuch.vim
-source ~/.config/nvim/plugins/firenvim.vim
 source ~/.config/nvim/plugins/floaterm.vim
-source ~/.config/nvim/plugins/fugitive.vim
 source ~/.config/nvim/plugins/lastplace.vim
-source ~/.config/nvim/plugins/markdown-preview.vim
 source ~/.config/nvim/plugins/pasta.vim
 source ~/.config/nvim/plugins/rooter.vim
 source ~/.config/nvim/plugins/sayonara.vim
@@ -154,6 +150,8 @@ source ~/.config/nvim/plugins/visual-multi.vim
 source ~/.config/nvim/plugins/blamer.vim
 source ~/.config/nvim/plugins/css-color.vim
 source ~/.config/nvim/plugins/wakatime.vim
+source ~/.config/nvim/plugins/dashboard.vim
+source ~/.config/nvim/plugins/help.vim
 
 call plug#end()
 
@@ -185,3 +183,8 @@ EOF
 
 syntax enable
 colorscheme dracula
+
+
+"-------------------- Colors --------------------
+
+source ~/.config/nvim/colors/dashboard.vim
