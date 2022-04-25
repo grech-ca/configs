@@ -30,8 +30,8 @@ command! -bang -nargs=? Docs
 " Customise the Rg command to use rg which ignores background files
 command! -bang -nargs=* Code
     \ call fzf#vim#grep(
-    \   'rg --column --line-number --no-heading -g "!.git/*" -g "!yarn.lock" -g "!package-lock.json" --hidden --color=always --smart-case -- '.shellescape(<q-args>), 1,
-    \   fzf#vim#with_preview(), <bang>0)
+    \   'rg --column --line-number --no-heading --smart-case -g "!.git/*" -g "!yarn.lock" -g "!package-lock.json" --hidden --color=always --smart-case -- '.shellescape(<q-args>), 1,
+    \   fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}),  <bang>0)
 
 " Prevent FzF from opening buffers in sidebar (CHADtree) — https://github.com/junegunn/fzf.vim/issues/1359#issuecomment-1019717775
 function ShiftFocusThenExecute(command)
