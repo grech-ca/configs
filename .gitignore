@@ -3,3 +3,5 @@ nvim/nvim
 
 # Mac OS stuff
 .DS_Store
+
+grech-nvim/plugin

@@ -24,6 +24,8 @@
 
 set expandtab
 set shiftwidth=2
+set smartindent
+set tabstop=2
 set cursorline
 set hidden
 set icon
@@ -165,7 +167,8 @@ set updatetime=100
 
 lua << EOF
 require('nvim-treesitter.configs').setup {
-  ensure_installed = 'maintained',
+  ensure_installed = 'all',
+  ignore_install = { "phpdoc" },
   highlight = {
     enable = true,
   },
