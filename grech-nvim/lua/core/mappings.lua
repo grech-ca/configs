@@ -99,7 +99,7 @@ map('n', 'gd', '<Plug>(coc-definition)')
 map('n', 'gy', '<Plug>(coc-type-definition)')
 map('n', 'gi', '<Plug>(coc-implementation)')
 map('n', 'gr', '<Plug>(coc-references)')
-map('n', 'la', '<Plug>(coc-codeaction)')
+map('n', '<leader>la', '<Plug>(coc-codeaction)')
 
 local esc = function(cmd)
   return vim.api.nvim_replace_termcodes(cmd, true, false, true)
